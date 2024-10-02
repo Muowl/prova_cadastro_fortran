@@ -8,15 +8,16 @@ program cadastro
     real :: valor
     logical :: disponivel
 
-    print *, 'Digite seu primeiro nome: '
+    print *, 'Digite o nome do produto: '
     read *, nome
 
-    print *, 'Digite seu segundo nome: '
+    print *, 'Digite a descricao do produto: '
     read *, descricao
 
     print *, 'Digite o valor do produto: '
     read *, valor
 
-    print *, 'Valores digitados: ', nome, ' ', descricao, ' ', valor
+    print *, 'Valores digitados: nome: ', nome, ' descricao: ', descricao, 'valor: '
+    print '(F6.2)', valor
 
 end program cadastro
