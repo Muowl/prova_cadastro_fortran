@@ -1,5 +1,5 @@
 ! Projeto em: https://github.com/Muowl/prova_cadastro_fortran
-program cadastro
+function cadastro(id) result(j)
     implicit none 
     !nome do produto = string
     !descrição do produto = string
@@ -19,5 +19,12 @@ program cadastro
 
     print *, 'Valores digitados: nome: ', nome, ' descricao: ', descricao, 'valor: '
     print '(F6.2)', valor
+
+end function
+
+
+program listagem
+    implicit none 
+
 
 end program cadastro
